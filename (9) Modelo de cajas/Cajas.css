@@ -1,0 +1,33 @@
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    height: 500px;
+    width: 650px;
+    border: 1px solid black;
+    padding: 15px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#linea1 {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+#linea2 {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: green;
+}
+
+#linea3 {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: blue;
+}

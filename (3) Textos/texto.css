@@ -1,0 +1,41 @@
+table{
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p:first-of-type {
+    font-weight: bold;
+    font-style: italic;
+}
+
+p#consejo {
+    background-color: rgb(191, 238, 117);
+    color: rgb(71, 53, 172);
+}
+
+span#textolinea {
+    background-color: rgb(245, 211, 149);
+    text-transform: uppercase;
+    color: rgb(71, 53, 172);
+    font-family: sans-serif;
+}
+
+h3 {
+    background-color: rgb(150, 109, 48);
+    color: rgb(236, 205, 136);
+}
+
+.clase {
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(71, 53, 172);
+}
+
+#idparaestilo {
+    background-color: rgb(120, 109, 180);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
