@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .div {
+            background-color: white;
+            position: sticky;
+            width: 200px;
+            height: 200px;
+            left: 200px;
+            top: 0px;
+            float: right;
+            z-index: 0;
+        }
+
+        .div1 {
+            background-color: blue;
+            position: sticky;
+            top: 0px;
+            width: 200px;
+            height: 200px;
+            z-index: 0;
+            clear: both;
+            margin: 0 auto;
+        }
+
+        .div2 {
+            background-color: red;
+            z-index: 0;
+            position: sticky;
+            width: 200px;
+            height: 200px;
+            top: 0px;
+            float: left;
+            clear: both;
+        }
+
+        #contenedor {
+            height: 200vh;
+        }
+    </style>
+</head>
+
+<body style="background-color: black">
+    <div id = "contenedor">
+        <div class="div"></div>
+        <div class="div1"></div>
+        <div class="div2"></div>
+    </div>
+
+</body>
+
+</html>
