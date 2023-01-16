@@ -1,0 +1,53 @@
+header {
+    background-color: rgb(224, 221, 221);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+header>div {
+    height: 30px;
+    padding: 10px;
+}
+
+header>div, footer>div {
+    background-color: rgb(218, 112, 59);
+    border: 2px solid rgb(0, 0, 0);
+    width: 150px;
+    font-size: large;
+    color: black;
+}
+
+header > div:nth-child(1){
+    order: 1;
+}
+
+header > div:nth-child(3){
+    flex-grow: 2;
+}
+
+header > div:nth-child(4){
+    flex-grow: 3;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: rgb(62, 143, 161);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>div {
+    height: 150px;
+}
+
+footer > div:nth-child(2){
+    flex-grow: 2;
+}

@@ -1,0 +1,36 @@
+.flex-container {
+    background-color: rgb(49, 49, 107);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    row-gap: 5px;
+    column-gap: 20px;
+    width: 500px;
+}
+.flex-container:nth-child(1){
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.flex-container:nth-child(2){
+    padding-left: 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 95px;
+    height: 300px;
+}
+
+.item {
+    color: white;
+    list-style: none;
+    background-color: rgb(96, 180, 208);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    font-size: large;
+}
