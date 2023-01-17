@@ -1,0 +1,36 @@
+
+#flexcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+header, footer {
+    height: 50px;
+    border: 1px solid black;
+}
+
+#subcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 20px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+aside {
+    height: 24%;
+    width: 17%;
+    border: 1px solid black;
+}
+
+article {
+    height: 69%;
+    width: 17%;
+    border: 1px solid black;
+}

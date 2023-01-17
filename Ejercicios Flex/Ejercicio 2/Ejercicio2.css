@@ -1,0 +1,23 @@
+div.test{
+    background-color: aqua;
+}
+
+ul.flexcenter {
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    background-color: orangered;
+    width: 230px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

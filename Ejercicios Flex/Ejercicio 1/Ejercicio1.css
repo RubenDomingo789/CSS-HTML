@@ -1,33 +1,32 @@
-
-.flexend1 {
-    flex-direction: row;
-}
-
-.flexend2 {
-    flex-direction: row-reverse;
-}
-
-.test {
-    display: flex;
+div.test {
     background-color: aqua;
-    height: 200px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    row-gap: 100px;
+    padding-top: 40px;
+}
+
+ul.flexend1 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 0px;
+    justify-content: space-between;
+}
+
+ul.flexend2 {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    padding-left: 1px;
+    justify-content: space-around;
 }
 
 li {
-    background-color: rgb(247, 74, 11);
-    text-align: center;
-    color: white;
+    background-color: orangered;
+    width: 230px;
     height: 50px;
-    width: 200px;
-    display: block;
-    font-size: large;
-}
-
-ul {
     display: flex;
-    column-gap: 25px;
-    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
