@@ -1,0 +1,33 @@
+
+.flexend1 {
+    flex-direction: row;
+}
+
+.flexend2 {
+    flex-direction: row-reverse;
+}
+
+.test {
+    display: flex;
+    background-color: aqua;
+    height: 200px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    row-gap: 100px;
+}
+
+li {
+    background-color: rgb(247, 74, 11);
+    text-align: center;
+    color: white;
+    height: 50px;
+    width: 200px;
+    display: block;
+    font-size: large;
+}
+
+ul {
+    display: flex;
+    column-gap: 25px;
+    flex-wrap: nowrap;
+}
