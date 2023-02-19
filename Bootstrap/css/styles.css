@@ -1,213 +1,218 @@
-/*===============Propiedades Globales================*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
 }
 
-
-
-/*===================MENU==========================*/
-
-#menu a,
-button {
-    font-size: 18px !important;
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
     font-weight: 600;
-
+    margin-bottom: 30px;
 }
 
-/*===================SLIDER DE IMAGENES==========================*/
-
-.carousel-inner {
-    max-height: 39rem !important;
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
-/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
-
-
-
-#img-equipo {
-    max-height: 30rem !important;
-    width: 50%;
+.jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
 }
 
-
-/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
-#local {
-    margin-top: 50px;
-    background-color: #f3f3f3;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 300px;
+.container-fluid {
+    padding: 60px 50px;
 }
 
-.mapa {
-    background: url(../img/mapa.png);
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
     width: 100%;
-    height: 500px;
+    height: 100%;
+    margin-bottom: 10px;
 }
 
-
-.wrapper-local {
-    width: 50%;
-    margin-left: 100px;
-    padding-top: 150px;
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+    color: #f4511e;
 }
 
-
-/*===========================SECCION EQUIPO MIAMI==================================*/
-#numeros-local {
-    margin: 0 !important;
-    padding: 0 !important;
+.carousel-indicators li {
+    border-color: #f4511e;
 }
 
-#numeros-local div {
-    padding: 0 20px 0 0;
-    text-align: left;
-    height: 48px;
+.carousel-indicators li.active {
+    background-color: #f4511e;
 }
 
-#numeros-local div:not(:last-child) {
-    border-right: 2px solid #3f3f3f;
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
 }
 
-#numeros-local div:not(:first-child) {
-    padding-left: 20px;
+.item span {
+    font-style: normal;
 }
 
-#numeros-local p {
-    margin: 0;
+.panel {
+    border: 1px solid #f4511e;
+    border-radius: 0 !important;
+    transition: box-shadow 0.5s;
 }
 
-/*=========================CONTACTOS BACKGROUND================================*/
-
-#bg-contactos {
-    position: relative;
-    top: -130px;
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
 }
 
-#seccion-contacto {
-    background-color: #1b2a4e;
-    min-height: 500px;
-    position: relative;
+.panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
 }
 
-/*=========================CONTACTOS FORMULARIO================================*/
-
-#contenedor-formulario {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fbfafa;
-    border-radius: 5px;
-
+.panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
-#titulo-formulario {
-    color: #3f3f3f;
+.panel-footer {
+    background-color: white !important;
 }
 
-
-
-
-/*=========================FOOTER================================*/
-
-footer {
-    background: #1b2a4e;
-    min-height: 100px;
-    ;
+.panel-footer h3 {
+    font-size: 32px;
 }
 
-footer p {
-    color: #f3f3f3;
-    text-align: center;
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
 }
 
-#iconos i {
-    font-size: 26px;
-    padding: 0 8px;
-    color: #f3f3f3;
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
 }
 
-/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+.navbar {
+    margin-bottom: 0;
+    background-color: green;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
 
-@media (max-width:1200px) {
+.navbar li a,
+.navbar .navbar-brand {
+    color: #fff !important;
+}
 
-    #intro,
-    #equipo {
-        width: 90% !important;
-        margin: auto;
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: green !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
     }
 
-    #local {
-        flex-wrap: wrap;
-        padding-top: 30px;
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
     }
-
-    .wrapper-local {
-        width: 90%;
-        margin: auto;
-        padding-top: 50px;
-    }
-
 }
 
-/*=========================MEDIA QUERIES PANTALLA SM================================*/
-
-
-@media (max-width:768px) {
-
-    #intro,
-    #equipo {
-        width: 90% !important;
-        margin: auto;
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
     }
 
-
-    #img-equipo {
-        max-height: 20rem !important;
-        width: 90%;
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
     }
-
-    .wrapper-local {
-        width: 90%;
-        margin: auto;
-        padding-top: 50px;
-    }
-
-    #local {
-        flex-wrap: wrap;
-    }
-
-    .mapa img {
-        width: 100%;
-        height: auto;
-    }
-
-    #bg-contactos {
-        top: -120px;
-    }
-
-
 }
 
-/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
-
-@media (max-width: 576px) {
-    #servicios-fila-2 {
-        width: 100% !important;
-    }
-
-    #servicios-fila-1 {
-        width: 100% !important;
-    }
-
-    .icono-wrap {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
         text-align: center;
+        margin: 25px 0;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
     }
 }
