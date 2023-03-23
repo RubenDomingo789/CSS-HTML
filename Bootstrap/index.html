@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <!-- Theme Made By www.w3schools.com -->
-    <title>Bootstrap Theme Company Page</title>
+    <title>GreenLeaf</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -19,146 +20,189 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#myPage">Green Leaf</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Inicio</a>
+                <span class="glyphicon glyphicon-leaf leaf" style="top: 16px;"></span>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#about">SOBRE NOSOTROS</a></li>
+                    <li><a href="#valores">VALORES</a></li>
+                    <li><a href="#services">SERVICIOS</a></li>
                     <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#pricing">PRICING</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#iniciativas">INICIATIVAS</a></li>
+                    <li><a href="#contact">CONTACTO</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="jumbotron text-center">
-        <h1>Company</h1>
-        <p>We specialize in blablabla</p>
-        <form>
-            <div class="input-group">
-                <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-danger">Subscribe</button>
+    <header>
+        <div class="jumbotron bg-image text-center" style="background-image: url(img/fondo.jpg);">
+            <h1><b>GREENLEAF</b></h1>
+            <p><b>Si amas la tierra, recicla y conserva</b></p>
+            <form>
+                <div class="input-group">
+                    <input type="email" class="form-control" size="50" placeholder="Correo electronico" required>
+                    <div class="input-group-btn">
+                        <button type="button" class="btn">Suscribirse</button>
+                    </div>
                 </div>
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    </header>
 
     <!-- Container (About Section) -->
     <div id="about" class="container-fluid">
         <div class="row">
             <div class="col-sm-8">
-                <h2>About Company Page</h2><br>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</h4><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <br><button class="btn btn-default btn-lg">Get in Touch</button>
+                <h2>HISTORIA DE LA COMPAÑIA</h2><br>
+                <h4>Somos una organización ecologista y pacifista internacional, económica y políticamente
+                    independiente, que no acepta donaciones
+                    ni presiones de gobiernos, partidos políticos o empresas. GreenLeaf utiliza la acción directa no
+                    violenta para atraer la atención
+                    pública hacia los problemas globales del medio ambiente e impulsar las soluciones necesarias para
+                    tener un futuro verde y en paz.</h4><br>
+                <p>En 1971, un grupo de activistas antinucleares canadienses se embarcaron a bordo del viejo pesquero
+                    Phyllis Cormack para
+                    protestar contra las pruebas nucleares que Estados Unidos estaba llevando a cabo en el archipiélago
+                    de Amchitka, en Alaska.
+                    Su objetivo: impedir que la bomba fuese detonada colocándose en el centro de la zona de pruebas.
+                    Como acción directa, la expedición a Amchitka no salió como se esperaba. Sin embargo, como
+                    estrategia de campaña resultó un
+                    éxito extraordinario. Un año después, Estados Unidos se vio forzado a anunciar que detendría las
+                    pruebas nucleares en la zona.
+                    Amchitka es desde entonces una reserva ornitológica.
+                    <br>Años más tarde, en 1978, las oficinas de Europa, Estados Unidos y el Pacífico decidieron poner
+                    en
+                    común sus recursos y crear GreenLeaf.
+                    En la actualidad, GreenLeaf es una de las organizaciones ambientalistas más importantes del mundo,
+                    cuya oficina central se encuentra en Amsterdam, Holanda, y cuenta con oficinas en 55 países en todo
+                    el mundo.
+                </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <span class="glyphicon glyphicon-signal logo"></span>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid bg-grey">
+    <div class="container-fluid bg-grey" id="valores">
         <div class="row">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-globe logo slideanim"></span>
-            </div>
             <div class="col-sm-8">
-                <h2>Our Values</h2><br>
-                <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-                <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+                <h2>NUESTROS VALORES</h2><br>
+                <h4><strong>MISION:</strong> GreenLeaf es una Organización No Gubernamental internacional que hace
+                    campañas para cambiar actitudes y hábitos con el fin de proteger el medio ambiente y fomentar la
+                    paz.</h4><br>
+                <p><strong>VISION:</strong><br>
+                <ul>
+                    <li>Frenar el cambio climático y aportar soluciones energéticas positivas para el planeta.
+                    </li>
+                    <li>Proteger la biodiversidad y los recursos naturales del planeta, buscando la sostenibilidad de
+                        los
+                        ecosistemas y las poblaciones.</li>
+                    <li>Trabajamos para evitar la deforestación, degradación y pérdida de biodiversidad de los bosques
+                        del
+                        planeta, en especial de los bosques primarios, bosques vírgenes donde residen dos terceras
+                        partes
+                        de la biodiversidad terrestre.</li>
+                    <li>Trabajamos también para preservar nuestros océanos, combatiendo la pesca destructiva, y
+                        fomentando
+                        la creación de una red mundial de redes marinas protegidas.</li>
+                    <li>Prevenir la contaminación y buscar las alternativas más sostenibles de gestión de residuos.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-globe logo slideanim"></span>
             </div>
         </div>
     </div>
 
     <!-- Container (Services Section) -->
     <div id="services" class="container-fluid text-center">
-        <h2>SERVICES</h2>
-        <h4>What we offer</h4>
+        <h2>SERVICIOS</h2>
+        <h4>¿Qué puedes hacer tú?</h4>
         <br>
         <div class="row slideanim">
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-off logo-small"></span>
-                <h4>POWER</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
+                <span class="glyphicon glyphicon-user logo-small"></span>
+                <h4>SOCIO</h4>
+                <p>Apoya a la asociación</p>
             </div>
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-heart logo-small"></span>
-                <h4>LOVE</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
+                <h4>DONATIVO</h4>
+                <p>Colabora para defender el medioambiente</p>
             </div>
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-lock logo-small"></span>
-                <h4>JOB DONE</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
+                <span class="glyphicon glyphicon-globe logo-small"></span>
+                <h4>VOLUNTARIADO</h4>
+                <p>Protege nuestro planeta</p>
             </div>
         </div>
         <br><br>
         <div class="row slideanim">
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-leaf logo-small"></span>
-                <h4>GREEN</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
+                <span class="glyphicon glyphicon-education logo-small"></span>
+                <h4>ESCUELA</h4>
+                <p>Cursos y campamentos de activistas</p>
             </div>
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-certificate logo-small"></span>
-                <h4>CERTIFIED</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
+                <span class="glyphicon glyphicon-pencil logo-small"></span>
+                <h4>PETICIONES</h4>
+                <p>Presion contra los gobiernos para <br>proteger el medioambiente</p>
             </div>
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-wrench logo-small"></span>
-                <h4 style="color:#303030;">HARD WORK</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
+                <span class="glyphicon glyphicon-shopping-cart logo-small"></span>
+                <h4 style="color:#303030;">TIENDA</h4>
+                <p>Productos ecológicos con materiales reciclados</p>
             </div>
         </div>
     </div>
 
-    <!-- Container (Portfolio Section) -->
     <div id="portfolio" class="container-fluid text-center bg-grey">
         <h2>Portfolio</h2><br>
-        <h4>What we have created</h4>
+        <h4>VICTORIAS 2022</h4>
         <div class="row text-center slideanim">
             <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="paris.jpg" alt="Paris" width="400" height="300">
-                    <p><strong>Paris</strong></p>
-                    <p>Yes, we built Paris</p>
+                <div class="thumbnail" style="padding-bottom: 40px;">
+                    <img src="img/cambioClim.webp">
+                    <p><strong>La central de Meirama ya es historia</strong></p>
+                    <p style="padding: 10px;">La central térmica de carbón de Meirama, en Galicia, es demolida por
+                        Naturgy como parte del plan de su desmantelamiento. Se acaba así con uno de los símbolos de la
+                        quema de carbón,
+                        el combustible fósil que más contribuye al cambio climático.</p>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="newyork.jpg" alt="New York" width="400" height="300">
-                    <p><strong>New York</strong></p>
-                    <p>We built New York</p>
+                <div class="thumbnail" height="500px">
+                    <img src="img/bosques.webp">
+                    <p><strong>Gran acuerdo en Europa contra la deforestación</strong></p>
+                    <p style="padding: 10px;">Varios organos europeos acuerdan un Reglamento que obligará a las empresas
+                        que venden o comercializan determinadas materias primas en el
+                        mercado de la UE rastreen su origen y demuestren que no están vinculadas a la destrucción,
+                        degradación de los bosques o violaciones de derechos humanos.</p>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-                    <p><strong>San Francisco</strong></p>
-                    <p>Yes, San Fran is ours</p>
+                <div class="thumbnail" style="padding-bottom: 60px;">
+                    <img src="img/energias.webp">
+                    <p><strong>Las energías renovables baten máximo histórico</strong></p>
+                    <p style="padding: 10px;">Las energías renovables baten máximo histórico en generación y consiguen
+                        que baje el precio de la electricidad: la eólica en generación anual
+                        e instantánea y la solar en generación anual.</p>
                 </div>
             </div>
         </div><br>
+    </div>
 
-        <h2>What our customers say</h2>
+    <div id="iniciativas" class="container-fluid text-center">
+        <h2>PRINCIPALES INICIATIVAS ACTIVAS</h2>
         <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -170,15 +214,13 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President,
-                            Comment Box</span></h4>
+                    <h4><img src="img/oceano.jpg"><br><br>Carrera por los oceanos.</h4>
                 </div>
                 <div class="item">
-                    <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+                    <h4><img src="img/cine.jpg"><br><br>Cine solar itinerante alimentado por energía solar.</h4>
                 </div>
                 <div class="item">
-                    <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor,
-                            FriendsAlot</span></h4>
+                    <h4><img src="img/playa.jpg"><br><br>Dos vueltas al Mar Menor en bici con 1L de agua</h4>
                 </div>
             </div>
 
@@ -194,79 +236,12 @@
         </div>
     </div>
 
-    <!-- Container (Pricing Section) -->
-    <div id="pricing" class="container-fluid">
-        <div class="text-center">
-            <h2>Pricing</h2>
-            <h4>Choose a payment plan that works for you</h4>
-        </div>
-        <div class="row slideanim">
-            <div class="col-sm-4 col-xs-12">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <h1>Basic</h1>
-                    </div>
-                    <div class="panel-body">
-                        <p><strong>20</strong> Lorem</p>
-                        <p><strong>15</strong> Ipsum</p>
-                        <p><strong>5</strong> Dolor</p>
-                        <p><strong>2</strong> Sit</p>
-                        <p><strong>Endless</strong> Amet</p>
-                    </div>
-                    <div class="panel-footer">
-                        <h3>$19</h3>
-                        <h4>per month</h4>
-                        <button class="btn btn-lg">Sign Up</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <h1>Pro</h1>
-                    </div>
-                    <div class="panel-body">
-                        <p><strong>50</strong> Lorem</p>
-                        <p><strong>25</strong> Ipsum</p>
-                        <p><strong>10</strong> Dolor</p>
-                        <p><strong>5</strong> Sit</p>
-                        <p><strong>Endless</strong> Amet</p>
-                    </div>
-                    <div class="panel-footer">
-                        <h3>$29</h3>
-                        <h4>per month</h4>
-                        <button class="btn btn-lg">Sign Up</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <h1>Premium</h1>
-                    </div>
-                    <div class="panel-body">
-                        <p><strong>100</strong> Lorem</p>
-                        <p><strong>50</strong> Ipsum</p>
-                        <p><strong>25</strong> Dolor</p>
-                        <p><strong>10</strong> Sit</p>
-                        <p><strong>Endless</strong> Amet</p>
-                    </div>
-                    <div class="panel-footer">
-                        <h3>$49</h3>
-                        <h4>per month</h4>
-                        <button class="btn btn-lg">Sign Up</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Container (Contact Section) -->
     <div id="contact" class="container-fluid bg-grey">
-        <h2 class="text-center">CONTACT</h2>
+        <h2 class="text-center">CONTACTO</h2>
         <div class="row">
             <div class="col-sm-5">
-                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p>Contactanos para cualquier duda, y te responderemos en menos de 24 horas</p>
                 <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
                 <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
                 <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
@@ -274,17 +249,17 @@
             <div class="col-sm-7 slideanim">
                 <div class="row">
                     <div class="col-sm-6 form-group">
-                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
                     </div>
                     <div class="col-sm-6 form-group">
                         <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
                     </div>
                 </div>
-                <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comentarios"
                     rows="5"></textarea><br>
                 <div class="row">
                     <div class="col-sm-12 form-group">
-                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                        <button class="btn btn-default pull-left" type="submit">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -292,52 +267,19 @@
     </div>
 
     <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+    <img src="img/ubicacion.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
     <footer class="container-fluid text-center">
         <a href="#myPage" title="To Top">
             <span class="glyphicon glyphicon-chevron-up"></span>
         </a>
-        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+        <br>
+        <span class="fa fa-instagram" style="font-size: 30px;"></span>&emsp;
+        <span class="fa fa-twitter" style="font-size: 30px;"></span>&emsp;
+        <span class="fa fa-facebook" style="font-size: 30px;"></span>&emsp;
+        <span class="fa fa-twitter" style="font-size: 30px;"></span>
     </footer>
-
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-
-            $(window).scroll(function () {
-                $(".slideanim").each(function () {
-                    var pos = $(this).offset().top;
-
-                    var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
-                        $(this).addClass("slide");
-                    }
-                });
-            });
-        })
-    </script>
-
+    <script src="script/script.js"></script>
 </body>
 
 </html>
